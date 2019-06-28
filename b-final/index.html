@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<!-- boostrap cdn and font awesome urls added -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+	
+	<!-- hover.css is a third-party library that provides interesting hover effects such as sweep to bottom -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Rosie</title>
+</head>
+<body>
+    <header>
+        <div class="row no-gutters">
+		
+			<!-- Standard practice for logo to be a  link and it should always link to home page -->
+			<!-- here, we're using boostrap 4 and 8 size columns to split up our row into a third and two-thirds. -->
+			
+            <a class="col-md-4 logo" href="02-index.html"></a>
+            <div class="col-md-8">
+			
+			<!-- here, the extra divs add the developer name and title to the other column and allow styles to be added via appropriate class names -->
+                
+				<div class="row no-gutters bg-color-name-title">
+                    <div class="col heading">
+                        <h1 class="name">Rosie Odenkirk</h1>
+                        <h2 class="title"> Full Stack Developer</h2>
+                    </div>
+                </div>
+                <div class="row no-gutters">
+                    <div class="col">
+					
+					<!-- unordered lists are traditionally used for menu items. -->
+                        
+						<ul id="nav" class="list-inline menucontainer"> <!-- list-inline is a bootstrap style -->
+                            <li class="col-6 col-sm-3 list-inline-item ui-menu-color-home menuitem"> <!-- responsive design	 -->	
+                                <a href="index.html" class="hvr-sweep-to-bottom"><i class="fa fa-home" aria-hidden="true"></i><span>Home</span></a>
+								
+								<!-- As is traditional also, our menu items are anchor elements contained within links -->
+								<!-- Font Awesome classes added and aria hidden to ensure they're not interpreted by screen readers -->
+								<!-- hvr-sweep-to-bottom  class applied to facilitate hover action -->
+                            
+							</li>
+                            <li class="col-6 col-sm-3 list-inline-item ui-menu-color-resume menuitem">
+                                <a href="resume.html" class="hvr-sweep-to-bottom"><i class="fa fa-graduation-cap" aria-hidden="true"></i><span>Resume</span></a>
+                            </li>
+                            <li class="col-6 col-sm-3 list-inline-item ui-menu-color-contact menuitem">
+                                <a href="contact.html" class="hvr-sweep-to-bottom"><i class="fa fa-comment-o" aria-hidden="true"></i><span>Contact</span></a>
+                            </li>
+                            <li class="col-6 col-sm-3 list-inline-item ui-menu-color-download menuitem">
+                                <a href="assets/cv/sample-cv.pdf" target="_blank" class="hvr-sweep-to-bottom"><i class="fa fa-download" aria-hidden="true"></i><span>Download CV</span></a>
+								<!-- Link to Dowloadable CV Added-->
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="container-fluid">
+        <div class="row"> <!-- row-table removed and replaced with row-->
+			<div class="col-md-4 bg-color-personal-info section-column"> 
+			
+			<!-- 1st 3rd of row with 3xReasons taking other 2x3rds of row.  Will be styled with diff bg colour-->
+                
+				<div class="row"> <!-- Each column has its own header -->
+                    <div class="col-12">
+                        <h3 class="section-heading uppercase">
+                            Personal Info
+                        </h3>
+                    </div>
+                </div>
+                <div class="personal-info-item">
+				
+				<!--Outer personal-info-item div to be created with key & value pairs where name=key and Rosie = value-->
+                    
+					<div class="key">
+                        <p class="uppercase">
+                            Name:
+                        </p>
+                    </div>
+                    <div class="value">
+                        <p>
+                            Rosie Odenkirk
+                        </p>
+                    </div>
+                </div>
+                <div class="personal-info-item">
+                    <div class="key">
+                        <p class="uppercase">
+                            Address:
+                        </p>
+                    </div>
+                    <div class="value">
+                        <p>
+                            17 Riverdale, Catskills, NY USA
+                        </p>
+                    </div>
+                </div>
+                <div class="personal-info-item">
+                    <div class="key">
+                        <p class="uppercase">
+                            Phone:
+                        </p>
+                    </div>
+                    <div class="value">
+                        <p>
+                            555 204 1973
+                        </p>
+                    </div>
+                </div>
+                <div class="personal-info-item">
+                    <div class="key">
+                        <p class="uppercase">
+                            Email:
+                        </p>
+                    </div>
+                    <div class="value">
+                        <p>
+                            rosie.odenkirk@hansaw.com
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8 bg-color-three-reasons section-column">
+			<!-- This is the right hand column relating to the About me section only. -->
+                <div class="row">
+                    <div class="col">
+                        <h3 class="section-heading uppercase">About Me</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-10 offset-1 offset-sm-0 col-sm-4 col-md-6"> 
+					
+					<!-- Within 3xReasons Row there should be 3 Columns to contain the 3 Reasons text & icons-->
+					
+                        <div class="row">
+                            <div class="col-2"> 
+							
+							<!-- Within individual 3 Reason's Column's 12 units, 2 units for Font Awesome icon and 10 units for Header & Text-->
+                                
+								<i class="three-reasons-icon fa fa-question" aria-hidden="true"></i> <!-- Question Mark Font Awesome Icon -->
+                            </div>
+                            <div class="col-10">
+                                <h4 class="three-reasons-heading uppercase">What do I do?</h4> <!-- Change Heading Text to Upper Case -->
+                                <p>
+                                    I'm a skilled Full Stack Developer with a wealth of diverse
+									life and technical experience that I bring to every project.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-10 offset-1 offset-sm-0 col-sm-4 col-md-6">
+                        <div class="row">
+                            <div class="col-2">
+                                <i class="three-reasons-icon fa fa-thumbs-up" aria-hidden="true"></i> <!-- Thumbs Up Font Awesome Icon -->
+                            </div>
+                            <div class="col-10">
+                                <h4 class="three-reasons-heading uppercase">How do I do it?</h4>
+                                <p>
+                                    I follow form as well as function. I know that the aesthetics 
+									of effective design combined with application speed, security 
+									and reliability combine to create a great user experience.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-10 offset-1 offset-sm-0 col-sm-4 col-md-6">
+                        <div class="row">
+                            <div class="col-2">
+                                <i class="three-reasons-icon fa fa-bolt" aria-hidden="true"></i> <!-- Lightning Bolt Font Awesome Icon -->
+                            </div>
+                            <div class="col-10">
+                                <h4 class="three-reasons-heading uppercase">Why hire me?</h4>
+                                <p>
+                                    I work quickly and effectively in getting things built and 
+									working across the stack. I'm an excellent communicator who 
+									thrives in bright and enthusiastic teams and I'm also a self 
+									starter when working solo.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <footer class="container-fluid"> <!-- footer container to be page wide and broken into three columns.  Rule of thirds applies -->	
+        <div id="footer-details" class="row">
+            <div class="col-sm-4"> <!--becasuse bootstrap is mobile first if no xs col entry it the mobile col will be full width -->
+                <h5 class="uppercase general-sub">About</h5>
+                <p class="inline-block">
+                    Full Stack Web Developer. Skilled in everything from HTML to Heroku. The capacity for structural and design thinking.
+                </p>
+            </div>
+            <div class="col-sm-4">
+                <h5 class="uppercase general-sub">Download</h5>
+                <p class="inline-block">
+                    Need a printable version of my CV? Download it here.
+                    <a href="assets/cv/sample-cv.pdf" target="_blank" class="cv-pdf">
+					<!-- Link to CV File added -->
+                        <i class="fa fa-download" aria-hidden="true"></i>
+						<!-- archor tag for link to pdf file with font awesome icon and font hidden from creen readers  -->
+                        <span class="sr-only">Download link.</span>
+                    </a>
+                </p>
+            </div>
+            <div class="col-sm-4">
+                <h5 class="uppercase general-sub">Social</h5>
+                <ul class="list-inline social-links">
+					<!-- unordered list for social link icons  -->
+                    <li class="list-inline-item">
+                        <a target="_blank" href="#">
+						<!-- good practice to open links in new tab using target-blank.  this keeps user webpage open to return to -->
+                            <i class="fa fa-facebook" aria-hidden="true"></i> 
+                            <span class="sr-only">Facebook</span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a target="_blank" href="#">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                            <span class="sr-only">Twitter</span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a target="_blank" href="#">
+                            <i class="fa fa-linkedin" aria-hidden="true"></i>
+                            <span class="sr-only">LinkedIn</span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a target="_blank" href="#">
+                            <i class="fa fa-pinterest" aria-hidden="true"></i>
+                            <span class="sr-only">Pinterest</span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a target="_blank" href="#">
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                            <span class="sr-only">Instagram</span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a target="_blank" href="#">
+                            <i class="fa fa-youtube" aria-hidden="true"></i>
+                            <span class="sr-only">YouTube</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

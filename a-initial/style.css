@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
+/* This imports google Roboto and Exo fonts, which are in common use and contrast well,  and their respectve weights
+Note* the fonts need to be seperated by the pipe and teh weights should be seperated by commas */
+
+header {
+    margin: 0;
+}
+
+.logo {
+    background: url("../images/rosie.png");
+    background-position: center;
+    background-repeat: no-repeat; /* Don't want image tiled */
+    background-size: cover; /* for the size, you want it to cover its container that it's sitting inside */
+    min-height: 360px;
+    transition: all .5s ease-in-out; /* This applies a bit of animation to the image and repeats it for the various browser types */
+    -moz-transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+}

@@ -1,0 +1,18 @@
+Providing a CV for download Tutorial
+****************************
+
+What is it? 	A Resumé in download format
+What does it do?	Provides an alternative resumé format for clients and potential employers
+How do you use it?	Provide the resumé in PDF format to take advantage of a browser's ability to display and download content
+
+So we're on the homestretch, and well done for getting this far. So all that remains to do is to provide a CV in PDF format for employers or clients who may prefer that particular more traditional format. So let's create a subdirectory in our assets called CV and I have a sample PDF on my own machine that I will upload for testing. Now providing the CV for download purposes is straightforward. We just refer to the PDF document in our href as a link. The browser is clever enough to render the PDF in a viewable format. So let's try that now. There is one slight drawback to doing this the way we're doing at the moment.That is when we click on the CV our own page disappears. 
+
+Now a user may forget where they've come from - which is poor user experience, we want to maintain our visibility. The easy way to fix that is to set target="_blank" That ensures that the link will open in its own tab. All external navigation - all external links - should always use _blank to insure your presence is maintained  Okay there's the CV. It's available for download and viewing for any clients or potential employers who want that format  Really from here on in it's just a case of copying and pasting this code snippet to the relevant locations  We're going to add it to the footer of each page, and we're going to add it  to the head navigation in each page  And let's sanity check as we go along to make sure they work. You can see it works there.
+
+Okay, let's take it and drop it into our contact.html. Go to the header first find that menu item - the download menu item. Paste. Save. Let's go to resume and do the same.  And let's tackle the footers. Find the link. Paste. Save.  Do the same in resume.html
+Let's test all our links to make sure they work. It's very frustrating for users to encounter broken links = especially after all the effort that we go through to build a site. Let's not get caught up - tripped up - by what we consider trivial design changes, but could be essential to our users. 
+
+The last thing we need to do is to make sure that - in the spirit of mobile first design - our our work is guaranteed to render as efficiently as possible, and in a way that's would be expected to. So we use the meta tag and we set the viewport. We set the content to the width of the device on which it's being rendered, and we set it to a scale of 1. Once we have this in place on one page we will just simply copy and paste that on the other two pages of our of our site  Okay here we go. So there we have it. We have our resume. Our links are in place. Our skills.  Our work history is in place. We see the before and the after content styles there for the dates and the bullets. 
+
+Our contact is in place - all that remains to wire that up to an API that can send an email. It looks good and it looks as expected in mobile format. So you use this as you see fit. Now remember that other students will be building this as well. So in order to
+stand out, customize it in a way that appeals to you.
